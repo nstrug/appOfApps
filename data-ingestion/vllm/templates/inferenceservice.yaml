@@ -29,7 +29,7 @@ spec:
       {{- with .Values.tolerations }}
     tolerations:
       - key: {{ .key }}
-        operator: {{ .operator | default "Equal" }}
+        operator: {{ .operator | default "Exists" }}
         {{- if .value }}
         value: {{ .value }}
         {{- end }}
