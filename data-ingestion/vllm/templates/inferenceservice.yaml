@@ -14,7 +14,7 @@ metadata:
     opendatahub.io/dashboard: 'true'
 spec:
   predictor:
-    maxReplicas: {{ .Values.maxReplicas | default 1 }}
+    maxReplicas: {{ .Values.maxReplicas | default 0 }}
     minReplicas: {{ .Values.minReplicas }}
     model:
       modelFormat:
